@@ -9,7 +9,7 @@ Zingle – An alert will display underneath your UINavigationBar 🎅
 ![MadeWithLove](https://img.shields.io/badge/Made%20with%20%E2%9D%A4-India-green.svg)
 [![Blog](https://img.shields.io/badge/Blog-iKiwiTech.com-blue.svg)](http://www.ikiwitech.com)
 
-1. [Screenshot](#screenshot)
+1. [Screenshots](#screenshots)
 2. [Features](#features)
 3. [Installation](#installation)
 4. [Setup](#setup)
@@ -17,11 +17,13 @@ Zingle – An alert will display underneath your UINavigationBar 🎅
 6. [Thanks](#thank-you)
 7. [License](#license)
 
-## Screenshot
+## Screenshots
 
 <table>
 <tr>
-<td align="center"><img src = "https://github.com/hemangshah/Zingle/blob/master/Screenshot/1.png" alt = "Usage"></td>
+<td align="center"><img src = "https://github.com/hemangshah/Zingle/blob/master/Screenshots/Screenshot-1.png" alt = "iPhone8+"></td>
+<td align="center"><img src = "https://github.com/hemangshah/Zingle/blob/master/Screenshots/Screenshot-2.png" alt = "iPhoneX"></td></tr>
+<tr><td align="center" colspan="2"><img src = "https://github.com/hemangshah/Zingle/blob/master/Screenshots/Screenshot-1-landscape.png" alt = "Landscape"></td></tr>
 </table>
 
 ## Features
