@@ -73,7 +73,7 @@ extension Zingle {
 }
 
 // MARK: chaning function and show / hide functions
-extension Zingle {
+public extension Zingle {
     
     public func message(message: String) -> Self {
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + self.duration/4.0) {
