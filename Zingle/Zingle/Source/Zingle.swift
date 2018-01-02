@@ -8,6 +8,16 @@
 
 import UIKit
 
+public class ZingleConfig {
+    public var delay: TimeInterval = 2.0
+    public var duration: TimeInterval = 0.3
+    public var messageColor: UIColor = UIColor.white
+    public var messageFont: UIFont = UIFont.systemFont(ofSize: 15)
+    public var message: String! = "No message has been set."
+    public var messageIcon: UIImage! = UIImage.init()
+    public var backgroundColor: UIColor = UIColor.red
+}
+
 public class Zingle: UIView {
     
     typealias CompletionBlock = () -> Void
@@ -19,7 +29,7 @@ public class Zingle: UIView {
     
     fileprivate var messageButton: UIButton = UIButton.init(type: .custom)
     fileprivate var messageColor: UIColor = UIColor.white
-    fileprivate var messageFont: UIFont = UIFont.systemFont(ofSize: 13)
+    fileprivate var messageFont: UIFont = UIFont.systemFont(ofSize: 15)
     
     fileprivate let heightForZingal: CGFloat = 30.0
     
@@ -44,6 +54,19 @@ public class Zingle: UIView {
     
     required public init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+}
+
+//MARK: UIViewController Extension
+public extension UIViewController {
+    public func zingle(withConfig config: ZingleConfig) {
+        Zingle(duration: config.duration, delay: config.delay)
+            .backgroundColor(color: config.backgroundColor)
+            .message(message: config.message)
+            .messageIcon(icon: config.messageIcon)
+            .messageColor(color: config.messageColor)
+            .messageFont(font: config.messageFont)
+            .show()
     }
 }
 
