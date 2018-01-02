@@ -49,6 +49,7 @@ Zingle.init(duration: 0.5, delay: 3)
   .messageIcon(icon: #imageLiteral(resourceName: "warning-icon"))
   .messageColor(color: .white)
   .messageFont(font: UIFont.init(name: "AmericanTypewriter", size: 15.0)!)
+  .backgroundColor(color: UIColor.red)
   .show()
 ````
 
