@@ -41,6 +41,20 @@ public class Zingle: UIView {
         return 0.0
     }
     
+    fileprivate var unhideYPositionForZingle: CGFloat {
+        get {
+            let yPos = self.yPosForZingal
+            return yPos
+        }
+    }
+    
+    fileprivate var hiddenYPositionForZingle: CGFloat {
+        get {
+            let yPos = self.yPosForZingal - heightForZingal
+            return yPos
+        }
+    }
+
     public init(duration: TimeInterval = 0.3, delay: TimeInterval = 2) {
         
         self.completion = nil
@@ -79,7 +93,7 @@ extension Zingle {
 
     fileprivate func setupView() {
         self.backgroundColor = UIColor.backgroundColor
-        self.frame = CGRect(x: 0, y: self.yPosForZingal, width: UIScreen.main.bounds.width, height: 0.0)
+        self.frame = CGRect(x: 0, y: self.hiddenYPositionForZingle, width: UIScreen.main.bounds.width, height: heightForZingal)
     }
     
     fileprivate func setupMessageButton() {
@@ -151,11 +165,12 @@ extension Zingle {
         guard !self.isZingleShowing else {
             return
         }
+        
         self.isZingleShowing = true
+        self.alpha = 1.0
         
         UIView.animate(withDuration: duration, animations: {
-            self.frame.size.height = self.heightForZingal
-            self.messageButton.frame.size.height = self.frame.size.height
+            self.frame.origin.y = self.unhideYPositionForZingle
             self.layoutIfNeeded()
         }) { _ in
             completion()
@@ -164,8 +179,8 @@ extension Zingle {
     
     fileprivate func finishAnimating() {
         UIView.animate(withDuration: duration, animations: {
-            self.frame.size.height = 0.0
-            self.messageButton.frame.size.height = self.frame.size.height
+            self.frame.origin.y = self.hiddenYPositionForZingle
+            self.alpha = 0.0
             self.layoutIfNeeded()
         }) { _ in
             self.isZingleShowing = false
