@@ -15,9 +15,10 @@ Zingle – An alert will display underneath your UINavigationBar 🎅
 2. [Features](#features)
 3. [Installation](#installation)
 4. [Setup](#setup)
-5. [Credits](#credits)
-6. [Thanks](#thank-you)
-7. [License](#license)
+5. [Usage](#usage)
+6. [Credits](#credits)
+7. [Thanks](#thank-you)
+8. [License](#license)
 
 ## Screenshots
 
@@ -47,7 +48,9 @@ Zingle – An alert will display underneath your UINavigationBar 🎅
 import Zingle
 ````
 
-````
+## Usage
+
+````swift
 Zingle.init(duration: 0.5, delay: 3)
   .message(message: "No Internet Connection.")
   .messageIcon(icon: #imageLiteral(resourceName: "warning-icon"))
@@ -59,7 +62,7 @@ Zingle.init(duration: 0.5, delay: 3)
 
 You can also use it with in-built extension to `UIViewController`.
 
-````
+````swift
 //Create ZingleConfig.
 let config = ZingleConfig()
 config.delay = 2.0
