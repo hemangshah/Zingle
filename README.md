@@ -43,9 +43,7 @@ Zingle – An alert will display underneath your UINavigationBar 🎅
 
 ## Setup
 
-First import Zingle
-
-````
+````swift
 import Zingle
 ````
 
