@@ -43,6 +43,12 @@ Zingle – An alert will display underneath your UINavigationBar 🎅
 
 ## Setup
 
+First import Zingle
+
+````
+import Zingle
+````
+
 ````
 Zingle.init(duration: 0.5, delay: 3)
   .message(message: "No Internet Connection.")
