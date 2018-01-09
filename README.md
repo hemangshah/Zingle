@@ -67,13 +67,18 @@ You can also use it with in-built extension to `UIViewController`.
 let config = ZingleConfig()
 config.delay = 2.0
 config.duration = 1.0
-config.message = "No Internet Connection!"
 config.messageColor = UIColor.white
-config.messageFont = UIFont.init(name: "Verdana-Bold", size: 15.0) ?? UIFont.boldSystemFont(ofSize: 15.0)
+config.messageFont = UIFont.init(name: "AmericanTypewriter", size: 15.0)!
 config.backgroundColor = UIColor.purple.withAlphaComponent(0.5)
         
-//Show Zingle with `self` (UIViewController).
-self.zingle(withConfig: config)
+//Show Zingle with `self` (UIViewController) with custom configuration.
+self.zingle(message: "No Internet Connection.", withConfig: config)
+
+//or
+
+//Show Zingle with `self` (UIViewController) with default configuration.
+self.zingle(message: "No Internet Connection.")
+
 ````
 You can [watch](https://github.com/hemangshah/Zingle/subscription) to <b>Zingle</b> to see continuous updates. Stay tuned.
 
