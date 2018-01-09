@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 s.name             = 'Zingle'
 s.module_name      = 'Zingle'
-s.version          = '1.2.0'
+s.version          = '1.3.0'
 s.summary          = 'Zingle – An alert will display underneath your UINavigationBar 🎅'
 s.description      = 'Want to show an alert under the UINavigationBar for various cases like No Internet? If yes, use Zingle.'
 s.homepage         = 'https://github.com/hemangshah/Zingle'
