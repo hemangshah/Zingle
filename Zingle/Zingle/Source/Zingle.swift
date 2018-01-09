@@ -13,7 +13,6 @@ public class ZingleConfig {
     public var duration: TimeInterval = 0.3
     public var messageColor: UIColor = UIColor.white
     public var messageFont: UIFont = UIFont.systemFont(ofSize: 15)
-    public var message: String! = "No message has been set."
     public var messageIcon: UIImage! = UIImage.init()
     public var backgroundColor: UIColor = UIColor.red
 }
@@ -73,10 +72,21 @@ public class Zingle: UIView {
 
 //MARK: UIViewController Extension
 public extension UIViewController {
-    public func zingle(withConfig config: ZingleConfig) {
+    public func zingle(message: String!, withConfig config: ZingleConfig!) {
         Zingle(duration: config.duration, delay: config.delay)
             .backgroundColor(color: config.backgroundColor)
-            .message(message: config.message)
+            .message(message: message)
+            .messageIcon(icon: config.messageIcon)
+            .messageColor(color: config.messageColor)
+            .messageFont(font: config.messageFont)
+            .show()
+    }
+    
+    public func zingle(message: String!) {
+        let config = ZingleConfig()
+        Zingle(duration: config.duration, delay: config.delay)
+            .backgroundColor(color: config.backgroundColor)
+            .message(message: message)
             .messageIcon(icon: config.messageIcon)
             .messageColor(color: config.messageColor)
             .messageFont(font: config.messageFont)
