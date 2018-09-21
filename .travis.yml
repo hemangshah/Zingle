@@ -1,9 +1,10 @@
+language: swift
 osx_image: xcode9.2
-language: objective-c
 
-xcode_project: Zingle.xcodeproj
-
-# whitelist
 branches:
-only:
-- master
+  only:
+    - master
+    
+script: 
+  - cd Zingle/
+  - xcodebuild clean build CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
