@@ -2,7 +2,7 @@
 
 Zingle – An alert will display underneath your UINavigationBar 🎅
 
-💥 **Note:** Zingle has a dependancy to have a `UINavigationController` in your app meaning, it will not work/display in your app if you don't have a `UINavigationController` linked to a `UIViewController` in which you're planning to show an alert. However, it will get display even if the `UINavigationBar` is hidden for a particular `UIViewController`.
+💥 **Note:** Zingle has a dependency to have a `UINavigationController` in your app, which means it will not work/display in your app if you don't have a `UINavigationController` linked to a `UIViewController` in which you're planning to show an alert. However, it will get display even if the `UINavigationBar` is hidden for a particular `UIViewController`.
 
 [![Build Status](https://travis-ci.org/hemangshah/Zingle.svg?branch=master)](https://travis-ci.org/hemangshah/Zingle)
 ![License](https://img.shields.io/badge/License-MIT-lightgrey.svg)
@@ -34,7 +34,7 @@ Zingle – An alert will display underneath your UINavigationBar 🎅
 
 1. Easy to setup & Use
 2. Dynamic Property Configurations.
-3. Lightweight with zero dependancies.
+3. Lightweight with zero dependencies.
 
 ## Installation
 
