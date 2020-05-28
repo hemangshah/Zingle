@@ -9,6 +9,7 @@
 import UIKit
 
 public class ZingleConfig {
+    public init() {}
     ///Set delay to hide Zingle. Default: 2.0.
     public var delay: TimeInterval = 2.0
     ///Set duration of Zingle visible animation. Default: 0.3.
