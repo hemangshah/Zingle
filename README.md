@@ -8,7 +8,6 @@ Zingle – An alert will display underneath your UINavigationBar 🎅
 ![License](https://img.shields.io/badge/License-MIT-lightgrey.svg)
 ![Platform](https://img.shields.io/badge/Platforms-iOS-red.svg)
 ![Swift 4.x](https://img.shields.io/badge/Swift-4.x-blue.svg)
-![CocoaPods](https://img.shields.io/cocoapods/dt/Zingle.svg)
 ![MadeWithLove](https://img.shields.io/badge/Made%20with%20%E2%9D%A4-India-green.svg)
 [![Awesome-Swift](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/matteocrippa/awesome-swift/)
 
